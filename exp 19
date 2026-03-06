@@ -1,0 +1,11 @@
+age <- c(20,25,30,35,40)
+bp <- c(120,125,130,135,140)
+model <- lm(bp ~ age)
+print(summary(model))
+plot(age, bp,
+     main="Linear Regression",
+     xlab="Age",
+     ylab="Blood Pressure",
+     col="green")
+
+abline(model, col="red")
